@@ -9,3 +9,4 @@ class k1:
     dhanar = 85
     hikma = 80
 
+print(k1)
