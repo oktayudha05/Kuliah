@@ -1,6 +1,10 @@
 tinggi = 5
 
-for i in range(tinggi):
-    for j in range(i + 1):
-        print('*', end='')
+for n_tinggi in range(tinggi):
+    for j in range(n_tinggi, tinggi):
+        print(' ', end='')
+    
+    for j in range(n_tinggi):
+        print('*', end=' ')
+
     print()
