@@ -1,0 +1,19 @@
+DEKLARASI
+tinggi : int
+
+ALGORITMA
+tinggi <- 5
+
+FOR n IN range(1, tinggi + 1):
+    FOR s IN range(tinggi - n):
+        // Membuat spasi sebelum bintang
+        PRINT ' ' // Tambahkan spasi tanpa baris baru
+        
+    FOR s IN range(n * 2 - 1):
+        // Menentukan apakah bintang atau garis bawah yang akan ditampilkan
+        IF s % 2 == 0 THEN
+            PRINT '*' // Tampilkan bintang tanpa baris baru
+        ELSE
+            PRINT '_' // Tampilkan garis bawah tanpa baris baru
+        
+    PRINT() // Pindah ke baris berikutnya
