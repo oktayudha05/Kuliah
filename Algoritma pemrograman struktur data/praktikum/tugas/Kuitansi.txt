@@ -1,0 +1,10 @@
+Selamat Datang di Toko Maju Jaya
+ 
+Kuitansi - 4 Septermber 2023
+ 
+Sabun = Rp 10000
+Shampo = Rp 15000
+Mie instant = Rp 5000
+Detergen = Rp 17500
+ 
+Total Belanja =47500
