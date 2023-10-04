@@ -1,0 +1,14 @@
+# tolong buatkan pesudocode dari algoritma binary search, dan simple search dengan menggunakan array atau linked list!
+
+function binarySearch(array, target):
+    kiri = 0
+    kanan = length(array) - 1
+    while kiri <= kanan:
+        tengah = (kiri + kanan) / 2
+        if array[tengah] == target:
+            return tengah
+        else if array[tengah] < target:
+            kiri = tengah + 1
+        else:
+            kanan = tengah - 1
+    return -1
