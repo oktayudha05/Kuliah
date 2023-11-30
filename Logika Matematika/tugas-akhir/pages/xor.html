@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Log in - Brand</title>
+    <title>Gerbang Logika - XOR</title>
     <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="/assets/css/Inter.css">
 </head>
@@ -40,16 +40,16 @@
                     <div class="card">
                         <div class="card-body text-center d-flex flex-column align-items-center">
                             <p class="fw-bold text-success mb-2">Input P</p>
-                            <div class="btn-group" role="group" style="margin-top: -8px;"><button class="btn btn-primary" type="button">TRUE</button><button class="btn btn-primary" type="button">FALSE</button></div>
+                            <div class="btn-group" role="group" style="margin-top: -8px;"><button class="btn btn-primary" type="button" id="true1xor">TRUE</button><button id="false1xor" class="btn btn-primary" type="button">FALSE</button></div>
                             <p class="fw-bold text-success mb-2" style="margin-bottom: 0px;margin-top: 33px;">Input Q</p>
-                            <div class="btn-group" role="group" style="margin-top: -8px;"><button class="btn btn-primary" type="button">TRUE</button><button class="btn btn-primary" type="button">FALSE</button></div>
+                            <div class="btn-group" role="group" style="margin-top: -8px;"><button class="btn btn-primary" type="button" id="true2xor">TRUE</button><button id="false2xor" class="btn btn-primary" type="button">FALSE</button></div>
                             <div class="card"></div>
                             <form method="post">
                                 <div class="mb-3"></div>
                                 <p class="fw-bold text-success mb-2" style="margin-bottom: 0px;margin-top: 33px;">Output</p>
                                 <div class="mb-3"></div>
-                                <div class="alert alert-success" role="alert" style="margin-top: -16px;"><span><strong>Hasil dari True XOR False adalah False!</strong></span></div>
-                                <div class="mb-3"><button class="btn btn-primary shadow d-block w-100" type="submit" style="margin-top: 24px;">Kirim</button></div>
+                                <div class="alert alert-success" role="alert" style="margin-top: -16px;" id="outputXor"><span><strong>Hasilnya akan muncul disini</strong></span></div>
+                                <div class="mb-3"><button class="btn btn-primary shadow d-block w-100" type="button" style="margin-top: 24px;" id="kirimXor">Kirim</button></div>
                             </form>
                         </div>
                     </div>
@@ -75,7 +75,7 @@
             </div>
         </div>
     </footer><!-- End: Footer Multi Column -->
-    <script src="main.js"></script>
+    <script src="../javascript/xor.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/assets/js/bs-init.js"></script>
     <script src="/assets/js/bold-and-dark.js"></script>
