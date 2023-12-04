@@ -1,4 +1,5 @@
 //! logic nand
+import { tabel } from './and.js'
 true1nand = document.querySelector('#true1nand')
 true2nand = document.querySelector('#true2nand')
 false1nand = document.querySelector('#false1nand')
@@ -34,4 +35,6 @@ kirimNand.addEventListener('click', () => {
     } else {
         outputNand.innerHTML = 'Hasil dari <strong>' + input1nand + '</strong> NAND <strong>' + input2nand + '</strong> adalah ' + '<strong>True</strong>'
     }
+
+    tabel(input1nand, input2nand)
 })

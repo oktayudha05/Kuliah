@@ -5,6 +5,11 @@ const true2or = document.querySelector('#true2or');
 const false2or = document.querySelector('#false2or');
 const kirimOr = document.querySelector('#kirimOr');
 const outputOr = document.querySelector('#outputOr');
+const baris1 = document.querySelector('#baris1');
+const baris2 = document.querySelector('#baris2');
+const baris3 = document.querySelector('#baris3');
+const baris4 = document.querySelector('#baris4');
+
 
 true1or.addEventListener('click', () => {
     false1or.classList.remove('active');
@@ -33,5 +38,36 @@ kirimOr.addEventListener('click', () => {
         outputOr.innerHTML = 'Hasil dari <strong>' + input1or + '</strong> OR <strong>' + input2or + '</strong> adalah ' + '<strong>True</strong>'
     } else {
         outputOr.innerHTML = 'Hasil dari <strong>' + input1or + '</strong> OR <strong>' + input2or + '</strong> adalah ' + '<strong>False</strong>'
+    }
+
+    if (input1or == true && input2or == true) {
+        baris1.classList.add('table-success');
+
+        baris2.classList.remove('table-success');
+        baris3.classList.remove('table-success');
+        baris4.classList.remove('table-success');
+    } else if (input1or == false && input2or == false) {
+        baris4.classList.add('table-success');
+
+        baris1.classList.remove('table-success');
+        baris2.classList.remove('table-success');
+        baris3.classList.remove('table-success');
+    } else if (input1or == true && input2or == false) {
+        baris2.classList.add('table-success');
+
+        baris1.classList.remove('table-success');
+        baris3.classList.remove('table-success');
+        baris4.classList.remove('table-success');
+    } else if (input1or == false && input2or == true) {
+        baris3.classList.add('table-success');
+
+        baris1.classList.remove('table-success');
+        baris2.classList.remove('table-success');
+        baris4.classList.remove('table-success');
+    } else {
+        baris1.classList.remove('table-success');
+        baris2.classList.remove('table-success');
+        baris3.classList.remove('table-success');
+        baris4.classList.remove('table-success');
     }
 });

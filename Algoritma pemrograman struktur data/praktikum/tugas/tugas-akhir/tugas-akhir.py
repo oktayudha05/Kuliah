@@ -3,11 +3,11 @@ import pandas as pd
 
 sg.theme('DarkAmber')
 
-fileXlsx = 'biodata.xlsx'
+fileExcel = 'biodata.xlsx'
 
-df = pd.read_excel(fileXlsx)
+isiExcel = pd.read_excel(fileExcel)
 
-layout = [
+form = [
     [sg.Text('Nama'), sg.InputText(key='nama')],
     [sg.Text('NPM'), sg.InputText(key='npm')],
     [sg.Text('Jenis Kelamin'), sg.Combo(['Laki-laki', 'Perempuan'], key='jenis_kelamin')],
@@ -18,10 +18,10 @@ layout = [
     [sg.Submit(), sg.Button('Clear'), sg.Exit()],
 ]
 
-window = sg.Window('Tugas Akhir', layout)
+window = sg.Window('Tugas Akhir', form)
 
 
-def clear_input():
+def hapusInput():
     for key in values:
         window[key]('')
     return None
@@ -31,10 +31,11 @@ while True:
     if event == sg.WIN_CLOSED or event == 'Exit':
         break
     elif event == 'Clear':
-        clear_input()
+        hapusInput()
     elif event == 'Submit':
-        df = df.append(values, ignore_index=True)
-        df.to_excel(fileXlsx, index=False)
-        clear_input()
+        isiExcel = isiExcel._append(values, ignore_index=True)
+        isiExcel.to_excel(fileExcel, index=False)
+        hapusInput()
         sg.popup('Data berhasil disimpan')
+        
 window.close()

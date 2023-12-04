@@ -36,21 +36,62 @@
                 </div>
             </div>
             <div class="row d-flex justify-content-center">
-                <div class="col-md-6 col-xl-4">
-                    <div class="card">
-                        <div class="card-body text-center d-flex flex-column align-items-center">
-                            <p class="fw-bold text-success mb-2">Input P</p>
-                            <div class="btn-group" role="group" style="margin-top: -8px;"><button class="btn btn-primary" type="button" id="true1or">TRUE</button><button id="false1or" class="btn btn-primary" type="button">FALSE</button></div>
-                            <p class="fw-bold text-success mb-2" style="margin-bottom: 0px;margin-top: 33px;">Input Q</p>
-                            <div class="btn-group" role="group" style="margin-top: -8px;"><button class="btn btn-primary" type="button" id="true2or">TRUE</button><button id="false2or" class="btn btn-primary" type="button">FALSE</button></div>
-                            <div class="card"></div>
-                            <form method="post">
-                                <div class="mb-3"></div>
-                                <p class="fw-bold text-success mb-2" style="margin-bottom: 0px;margin-top: 33px;">Output</p>
-                                <div class="mb-3"></div>
-                                <div class="alert alert-success" role="alert" id="outputOr" style="margin-top: -16px;"><span><strong>Hasilnya akan muncul disini</strong></span></div>
-                                <div class="mb-3"><button id="kirimOr" class="btn btn-primary shadow d-block w-100" type="button" id="kirimOr" style="margin-top: 24px;">Kirim</button></div>
-                            </form>
+                <div class="col-md-5 text-center">
+                    <h2 class="fw-bold text-success">Tabel Kebenaran</h2>
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">P</th>
+                            <th scope="col">Q</th>
+                            <th scope="col">v</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr id="baris1">
+                            <th scope="row">1</th>
+                            <td>T</td>
+                            <td>T</td>
+                            <td>T</td>
+                        </tr>
+                        <tr id="baris2">
+                            <th scope="row">2</th>
+                            <td>T</td>
+                            <td>F</td>
+                            <td>T</td>
+                        </tr>
+                        <tr id="baris3">
+                            <th scope="row">3</th>
+                            <td>F</td>
+                            <td>T</td>
+                            <td>T</td>
+                        </tr>
+                        <tr id="baris4">
+                            <th scope="row">4</th>
+                            <td>F</td>
+                            <td>F</td>
+                            <td>F</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md-6 col-xl-4">
+                        <div class="card">
+                            <div class="card-body text-center d-flex flex-column align-items-center">
+                                <p class="fw-bold text-success mb-2">Input P</p>
+                                <div class="btn-group" role="group" style="margin-top: -8px;"><button class="btn btn-primary" type="button" id="true1or">TRUE</button><button id="false1or" class="btn btn-primary" type="button">FALSE</button></div>
+                                <p class="fw-bold text-success mb-2" style="margin-bottom: 0px;margin-top: 33px;">Input Q</p>
+                                <div class="btn-group" role="group" style="margin-top: -8px;"><button class="btn btn-primary" type="button" id="true2or">TRUE</button><button id="false2or" class="btn btn-primary" type="button">FALSE</button></div>
+                                <div class="card"></div>
+                                <form method="post">
+                                    <div class="mb-3"></div>
+                                    <p class="fw-bold text-success mb-2" style="margin-bottom: 0px;margin-top: 33px;">Output</p>
+                                    <div class="mb-3"></div>
+                                    <div class="alert alert-success" role="alert" id="outputOr" style="margin-top: -16px;"><span><strong>Hasilnya akan muncul disini</strong></span></div>
+                                    <div class="mb-3"><button id="kirimOr" class="btn btn-primary shadow d-block w-100" type="button" id="kirimOr" style="margin-top: 24px;">Kirim</button></div>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
