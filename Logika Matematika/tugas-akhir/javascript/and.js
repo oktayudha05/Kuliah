@@ -73,8 +73,6 @@ kirimAnd.addEventListener('click', () => {
     }
 });
 
-export { tabel };
-
 
 
 
