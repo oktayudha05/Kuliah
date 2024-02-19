@@ -1,0 +1,67 @@
+<mxfile host="app.diagrams.net" modified="2024-02-17T21:58:35.025Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="NXvQvgo6xJert73qFp08" version="23.1.5" type="device">
+  <diagram name="Page-1" id="2fudDDNEADqNkwlp9apn">
+    <mxGraphModel dx="880" dy="1646" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="qkjzwJiiwRHz3EKMN4Mh-1" value="Mayor Thomas" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="500" y="210" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qkjzwJiiwRHz3EKMN4Mh-8" value="&lt;h1&gt;Mayor Thomas&lt;/h1&gt;&lt;p&gt;1. Memegang peran penting dalam pengambilan keputusan di Desa Mineral.&lt;/p&gt;&lt;p&gt;2. Bertanggung jawab atas pengelolaan dan pengembangan Desa Mineral.&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;3. Memerlukan akses cepat dan akurat terhadap informasi terkait Desa Mineral&lt;/span&gt;&lt;/p&gt;" style="text;html=1;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="410" width="230" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="qkjzwJiiwRHz3EKMN4Mh-9" value="&lt;h1&gt;Gains&lt;/h1&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;1. Akses yang cepat dan mudah terhadap informasi untuk membuat keputusan yang lebih baik.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;2. Peningkatan dalam pengelolaan Desa Mineral melalui data yang akurat dan terkini.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="640" y="160" width="230" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="qkjzwJiiwRHz3EKMN4Mh-10" value="&lt;h1&gt;Pains&lt;/h1&gt;&lt;div&gt;&lt;div&gt;1. Keterbatasan akses terhadap data terkini.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;2. Kesulitan dalam membuat keputusan tanpa informasi yang memadai.&lt;/div&gt;&lt;/div&gt;" style="text;html=1;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="570" y="340" width="200" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="qkjzwJiiwRHz3EKMN4Mh-11" value="&lt;h1&gt;Use Cases&lt;/h1&gt;&lt;div&gt;&lt;div&gt;1. Memantau laju pertumbuhan penduduk untuk merencanakan infrastruktur dan layanan publik yang sesuai.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;2. Memeriksa hasil perkebunan dan pertanian untuk mengevaluasi kinerja sektor pertanian dan menentukan langkah-langkah pengembangan selanjutnya.&lt;/div&gt;&lt;/div&gt;" style="text;html=1;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="320" y="340" width="220" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="qkjzwJiiwRHz3EKMN4Mh-12" value="&lt;h1&gt;Jobs to Be Done&lt;/h1&gt;&lt;div&gt;&lt;div&gt;1. Memastikan pengelolaan Desa Mineral berjalan dengan efisien dan efektif.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;2. Membuat keputusan yang tepat berdasarkan informasi terkini.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;3. Menyediakan layanan publik yang berkualitas.&lt;/div&gt;&lt;/div&gt;" style="text;html=1;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="200" y="160" width="240" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="qkjzwJiiwRHz3EKMN4Mh-13" value="Perangkat Desa" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="570" y="800" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qkjzwJiiwRHz3EKMN4Mh-14" value="&lt;h1&gt;Perangkat Desa&lt;/h1&gt;&lt;div&gt;&lt;div&gt;1. Bertanggung jawab atas perencanaan dan implementasi inovasi di Desa Mineral.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;2. Memiliki pengetahuan mendalam tentang kebutuhan dan tantangan yang dihadapi Desa Mineral.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;3. Berperan sebagai penghubung antara Mayor Thomas dan penduduk Desa Mineral.&lt;/div&gt;&lt;/div&gt;" style="text;html=1;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="450" y="570" width="280" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="qkjzwJiiwRHz3EKMN4Mh-15" value="&lt;h1&gt;Gains&lt;/h1&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;1.&amp;nbsp;Peningkatan keahlian dan pengetahuan melalui pengembangan dan implementasi sistem informasi.&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;2. Peningkatan komunikasi dan kolaborasi antara pemerintah desa dan penduduknya." style="text;html=1;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="730" y="750" width="230" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="qkjzwJiiwRHz3EKMN4Mh-16" value="&lt;h1&gt;Pains&lt;/h1&gt;&lt;div&gt;&lt;div&gt;1. Keterbatasan dana untuk pengembangan sistem.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;2. Kesulitan dalam menyusun strategi yang sesuai kebutuhan penduduk dan Mayor Thomas.&lt;/div&gt;&lt;/div&gt;" style="text;html=1;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="640" y="930" width="210" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="qkjzwJiiwRHz3EKMN4Mh-17" value="&lt;h1&gt;Use Cases&lt;/h1&gt;&lt;div&gt;&lt;div&gt;1. Mengumpulkan data tentang desa untuk di laporkan kepada Mayor Thomas.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;2. Mengembangkan sistem informasi Desa Mineral.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;3. Menyusun strategi untuk memenuhi kebutuhan.&lt;/div&gt;&lt;/div&gt;" style="text;html=1;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="390" y="930" width="210" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="qkjzwJiiwRHz3EKMN4Mh-18" value="&lt;h1&gt;Jobs to Be Done&lt;/h1&gt;&lt;div&gt;&lt;div&gt;1. Memastikan informasi yang tepat dan terkini tersedia untuk Mayor Thomas dan penduduk desa.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;2. Mengembangkan solusi teknologi yang sesuai dengan kebutuhan.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;3.Menjamin penggunaan yang luas terhadap sistem informasi yang dikembangkan.&lt;/div&gt;&lt;/div&gt;" style="text;html=1;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="200" y="730" width="260" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="qkjzwJiiwRHz3EKMN4Mh-19" value="&lt;h1&gt;Penduduk Desa&lt;/h1&gt;&lt;div&gt;&lt;div&gt;1. Merupakan warga Desa Mineral yang beragam latar belakang dan profesi.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;2. Memiliki kebutuhan dan aspirasi yang berbeda-beda.&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;3. Memerlukan akses informasi yang sesuai dengan kehidupan sehari-hari&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="450" y="1190" width="280" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="qkjzwJiiwRHz3EKMN4Mh-20" value="&lt;h1&gt;Jobs to Be Done&lt;/h1&gt;&lt;div&gt;&lt;div&gt;1. Meningkatkan kualitas hidup pribadi dan keluarga.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;2. Memastikan keberlanjutan usaha pertanian dan perkebunan.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;3. Terlibat dalam proses pembangunan dan pengambilan keputusan di desa.&lt;/div&gt;&lt;/div&gt;" style="text;html=1;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="200" y="1350" width="260" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="qkjzwJiiwRHz3EKMN4Mh-21" value="&lt;h1&gt;Gains&lt;/h1&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;1.&amp;nbsp;&lt;/span&gt;Akses yang lebih baik terhadap layanan publik dan informasi yang sesuai.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;2. Peluang untuk meningkatkan pendapatan melalui pasar yang lebih luas.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="730" y="1370" width="230" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="qkjzwJiiwRHz3EKMN4Mh-22" value="Penduduk Desa" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="570" y="1420" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qkjzwJiiwRHz3EKMN4Mh-23" value="&lt;h1&gt;Pains&lt;/h1&gt;&lt;div&gt;&lt;div&gt;1. Keterbatasan akses terhadap layanan publik.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;2. Kurangnya kesadaran tentang peluang dan sumber daya.&lt;/div&gt;&lt;/div&gt;" style="text;html=1;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="640" y="1550" width="210" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="qkjzwJiiwRHz3EKMN4Mh-24" value="&lt;h1&gt;Use Cases&lt;/h1&gt;&lt;div&gt;&lt;div&gt;1. Mengumpulkan data tentang desa untuk di laporkan kepada Mayor Thomas.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;2. Mengembangkan sistem informasi Desa Mineral.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;3. Menyusun strategi untuk memenuhi kebutuhan.&lt;/div&gt;&lt;/div&gt;" style="text;html=1;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="390" y="1550" width="210" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="qkjzwJiiwRHz3EKMN4Mh-25" value="Nama: Oktario Mufti Yudha&lt;br&gt;NPM: 2320506044" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="210" y="-60" width="160" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
