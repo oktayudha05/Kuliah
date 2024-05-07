@@ -121,6 +121,65 @@ const buatTable = (baris, kolom) => {
         hasilOutput(temp);
     });
 
+    //! determinan
+    const determinan = document.querySelector('#determinan');
+    determinan.addEventListener('click', function(e) {
+        e.preventDefault();
+        if (baris !== kolom) {
+            alert('Ordo baris dan kolom harus sama!');
+            return;
+        }
+        if (baris == 2) {
+            const a = parseInt(document.querySelector('#datA00').value);
+            let b = parseInt(document.querySelector('#datA01').value);
+            let c = parseInt(document.querySelector('#datA10').value);
+            const d = parseInt(document.querySelector('#datA11').value);
+
+            if (Math.sign(b) == 1) {
+                b = b * -1;
+            }  else if (Math.sign(b) == -1) {
+                b = b * -1;
+            }
+
+            if (Math.sign(c) == 1) {
+                c = c * -1;
+            } else if (Math.sign(c) == -1) {
+                c= c * -1;
+            }
+
+            const baris1 = [d, b]
+            const baris2 = [c, a]
+            const hasil = [baris1, baris2];
+            hasilOutput(hasil);
+        } else if (baris == 3) {
+            const a = parseInt(document.querySelector('#datA00').value);
+            const b = parseInt(document.querySelector('#datA01').value);
+            const c = parseInt(document.querySelector('#datA02').value);
+            const d = parseInt(document.querySelector('#datA10').value);
+            const e = parseInt(document.querySelector('#datA11').value);
+            const f = parseInt(document.querySelector('#datA12').value);
+            const g = parseInt(document.querySelector('#datA20').value);
+            const h = parseInt(document.querySelector('#datA21').value);
+            const i = parseInt(document.querySelector('#datA22').value);
+            
+            const langkah1 = a * e * i;
+            const langkah2 = b * f * g;
+            const langkah3 = c * d * h;
+            const langkah4 = c * e * g;
+            const langkah5 = b * d * i;
+            const langkah6 = a * f * h;
+
+            const hasil = langkah1 + langkah2 + langkah3 - langkah4 - langkah5 - langkah6;
+            const isi = document.createElement('div');
+            const p = document.createElement('p');
+            p.innerHTML = hasil;
+            isi.appendChild(p);
+            output.appendChild(isi);
+        } else {
+            alert('Ordo baris dan kolom harus 2 atau 3!');
+        }
+    });
+
     //! Output
     const hasilOutput = (hasil) => {
         output.innerHTML = '';
@@ -129,6 +188,7 @@ const buatTable = (baris, kolom) => {
             for (let j = 0; j < kolom; j++) {
                 const td = document.createElement('td');
                 const isi = document.createElement('div');
+                isi.setAttribute('class', 'text-center alert alert-success mb-0 border-0');
                 const p = document.createElement('p');
                 p.innerHTML = hasil[i][j];
                 isi.appendChild(p);
