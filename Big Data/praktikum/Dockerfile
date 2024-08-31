@@ -1,7 +1,7 @@
 FROM openjdk:8-jdk-slim
 
 # Install Python and pip
-RUN apt-get update && apt-get install -y python3 python3-pip wget
+RUN apt-get update && apt-get install -y python3 python3-pip wget nano openssh-client
 
 # Install PySpark, pandas, Jupyter, and matplotlib
 RUN pip3 install pyspark pandas jupyter matplotlib
@@ -15,12 +15,13 @@ RUN wget https://downloads.apache.org/hadoop/common/hadoop-$HADOOP_VERSION/hadoo
 
 # Set environment variables for Hadoop
 ENV HADOOP_HOME=/usr/local/hadoop
-ENV PATH=$PATH:$HADOOP_HOME/bin
+ENV PATH=$PATH:$HADOOP_HOME/bin:$HADOOP_HOME/sbin
+ENV JAVA_HOME=/usr/local/openjdk-8
 
-# Detect JAVA_HOME dynamically and set it
-RUN JAVA_HOME=$(dirname $(dirname $(readlink -f $(which java)))) && \
-    export JAVA_HOME && \
-    $HADOOP_HOME/bin/hdfs namenode -format
+# Create hadoop user and group
+RUN groupadd -r hadoop && useradd -r -g hadoop hadoop && \
+    mkdir -p /data/hdfs/namenode /data/hdfs/datanode && \
+    chown -R hadoop:hadoop /usr/local/hadoop /data/hdfs
 
 # Set up working directory
 WORKDIR /workspace
