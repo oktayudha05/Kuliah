@@ -29,12 +29,12 @@ class Anjing extends Hewan {
 public class Main {
   public static void main(String[] args) {
   Hewan hewan = new Kucing();
-  hewan.bersuara(); // Output: Meow
+  hewan.bersuara(); 
   Kucing kucing = new Kucing();
-  kucing.makan("ikan"); // Memanggil metode makan() dari kelas Hewan
-  kucing.makan("ikan", 2); // Memanggil metode makan() yang overloaded
+  kucing.makan("ikan"); 
+  kucing.makan("ikan", 2); 
   Anjing anjing = new Anjing();
-  anjing.bersuara(); // Output: Woof
-  anjing.makan("daging", 3); // Memanggil metode makan() yang overloaded pada kelas Hewan
+  anjing.bersuara(); 
+  anjing.makan("daging", 3); 
   }
 }
