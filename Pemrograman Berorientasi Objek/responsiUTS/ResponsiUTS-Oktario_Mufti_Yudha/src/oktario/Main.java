@@ -109,37 +109,33 @@ class PegawaiKontrak extends Pegawai {
 }
 
 public class Main {
-    public static void main(String[] args) {
-        
+    public static void main(String[] args) { 
         // 1. Output Produk Elektronik
+        System.out.println("1. Output Produk");
         Produk elektronik = new Elektronik();
         elektronik.setNamaProduk("Laptop");
         elektronik.setHarga(5000000);
         ((Elektronik) elektronik).setGaransi(2);
-        System.out.println("1. Output Produk");
         System.out.println(elektronik.tampilkanInfo());
         System.out.println();
 
         // 2. Output Pegawai Tetap
+        System.out.println("2. Output Pegawai");
         Pegawai pegawaiTetap = new PegawaiTetap();
-        pegawaiTetap.setNamaPegawai("Budi");  // Ganti dengan nama kalian
+        pegawaiTetap.setNamaPegawai("Budi");
         pegawaiTetap.setGaji("5000000");
         ((PegawaiTetap) pegawaiTetap).setTunjangan("1000000");
-        System.out.println("2. Output Pegawai");
         System.out.println(pegawaiTetap.tampilkanInfo());
         System.out.println();
 
         // 3. Output Polimorfisme Produk dan Pegawai
         System.out.println("3. Output Polimorfisme");
-
-        // Polimorfisme Produk Makanan
         Produk snack = new Makanan();
         snack.setNamaProduk("Snack");
         snack.setHarga(15000);
         ((Makanan) snack).setTanggalKadaluarsa("2023-12-30");
         System.out.println(snack.tampilkanInfo());
 
-        // Polimorfisme Pegawai Kontrak
         Pegawai pegawaiKontrak = new PegawaiKontrak();
         pegawaiKontrak.setNamaPegawai("Andi");
         pegawaiKontrak.setGaji("3000000");
