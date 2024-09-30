@@ -5,6 +5,11 @@ abstract class Produk {
     private String namaProduk;
     private double harga;
 
+    public Produk(String namaProduk, double harga) {
+        this.namaProduk = namaProduk;
+        this.harga = harga;
+    }
+
     abstract String tampilkanInfo();
 
     public void setNamaProduk(String namaProduk) {
@@ -26,6 +31,11 @@ abstract class Pegawai {
     private String namaPegawai;
     private String gaji;
 
+    public Pegawai(String namaPegawai, String gaji) {
+        this.namaPegawai = namaPegawai;
+        this.gaji = gaji;
+    }
+
     abstract String tampilkanInfo();
 
     public void setNamaPegawai(String namaPegawai) {
@@ -46,6 +56,11 @@ abstract class Pegawai {
 class Elektronik extends Produk {
     private int garansi;
 
+    public Elektronik(String namaProduk, double harga, int garansi) {
+        super(namaProduk, harga);
+        this.garansi = garansi;
+    }
+
     public void setGaransi(int garansi) {
         this.garansi = garansi;
     }
@@ -61,6 +76,11 @@ class Elektronik extends Produk {
 
 class Makanan extends Produk {
     private String tanggalKadaluarsa;
+
+    public Makanan(String namaProduk, double harga, String tanggalKadaluarsa) {
+        super(namaProduk, harga);
+        this.tanggalKadaluarsa = tanggalKadaluarsa;
+    }
 
     public void setTanggalKadaluarsa(String tanggalKadaluarsa) {
         this.tanggalKadaluarsa = tanggalKadaluarsa;
@@ -79,6 +99,11 @@ class Makanan extends Produk {
 class PegawaiTetap extends Pegawai {
     private String tunjangan;
 
+    public PegawaiTetap(String namaPegawai, String gaji, String tunjangan) {
+        super(namaPegawai, gaji);
+        this.tunjangan = tunjangan;
+    }
+
     public void setTunjangan(String tunjangan) {
         this.tunjangan = tunjangan;
     }
@@ -94,6 +119,11 @@ class PegawaiTetap extends Pegawai {
 
 class PegawaiKontrak extends Pegawai {
     private String lamaKontrak;
+
+    public PegawaiKontrak(String namaPegawai, String gaji, String lamaKontrak) {
+        super(namaPegawai, gaji);
+        this.lamaKontrak = lamaKontrak;
+    }
 
     public void setLamaKontrak(String lamaKontrak) {
         this.lamaKontrak = lamaKontrak;
@@ -112,34 +142,23 @@ public class Main {
     public static void main(String[] args) { 
         // 1. Output Produk Elektronik
         System.out.println("1. Output Produk");
-        Produk elektronik = new Elektronik();
-        elektronik.setNamaProduk("Laptop");
-        elektronik.setHarga(5000000);
-        ((Elektronik) elektronik).setGaransi(2);
+        Produk elektronik = new Elektronik("Laptop", 5000000, 5);
         System.out.println(elektronik.tampilkanInfo());
         System.out.println();
 
         // 2. Output Pegawai Tetap
         System.out.println("2. Output Pegawai");
-        Pegawai pegawaiTetap = new PegawaiTetap();
-        pegawaiTetap.setNamaPegawai("Budi");
-        pegawaiTetap.setGaji("5000000");
-        ((PegawaiTetap) pegawaiTetap).setTunjangan("1000000");
+        Pegawai pegawaiTetap = new PegawaiTetap("Istoro", "5000000", "1000000");
         System.out.println(pegawaiTetap.tampilkanInfo());
         System.out.println();
 
         // 3. Output Polimorfisme Produk dan Pegawai
         System.out.println("3. Output Polimorfisme");
-        Produk snack = new Makanan();
-        snack.setNamaProduk("Snack");
-        snack.setHarga(15000);
-        ((Makanan) snack).setTanggalKadaluarsa("2023-12-30");
+        Produk snack = new Makanan("Nabati", 2000, "2023-10-01");
         System.out.println(snack.tampilkanInfo());
+        System.out.println();
 
-        Pegawai pegawaiKontrak = new PegawaiKontrak();
-        pegawaiKontrak.setNamaPegawai("Andi");
-        pegawaiKontrak.setGaji("3000000");
-        ((PegawaiKontrak) pegawaiKontrak).setLamaKontrak("12 bulan");
+        Pegawai pegawaiKontrak = new PegawaiKontrak("Ifad", "3000000", "1 bulan");
         System.out.println(pegawaiKontrak.tampilkanInfo());
     }
 }
