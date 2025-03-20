@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>form anggota</title>
+</head>
+<body>
+  <h1>form anggota</h1>
+
+  <form action="handler.php" method="post">
+    <table>
+      <tr>
+        <td>username</td>
+        <td>: <input type="text" name="username" value=""></td>
+      </tr>
+      <tr>
+        <td>nama toko</td>
+        <td>: <input type="text" name="nama_toko" value=""></td>
+      </tr>
+      <tr>
+        <td>alamat</td>
+        <td>: <textarea name="alamat" rows="3"></textarea></td>
+      </tr>
+
+      <tr>
+        <td></td>
+        <td>
+          <input type="hidden" name="id" value="">
+          <button type="submit" name="submit">simpan</button>
+        </td>
+      </tr>
+
+    </table>
+  </form>
+</body>
+</html>
