@@ -1,0 +1,16 @@
+{
+  "name": "Oktayur Sail Codespace",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+  },
+  "dockerComposeFile": ["../docker-compose.yml"],
+  "service": "laravel.test",
+  "workspaceFolder": "/workspace",
+  "forwardPorts": [80, 3306],
+  "postCreateCommand": "composer install && php artisan key:generate && php artisan migrate --force",
+  "remoteUser": "vscode"
+}
