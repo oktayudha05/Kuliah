@@ -1,0 +1,5 @@
+1. berdasarkan tugas pertemuan 9, buat perbandingan mengenai metode dan hasil menggunakan training from scratch dan transfer learning.
+2. cari data image classification di kaggle
+3. lakukan image classification dengan menggunakan transfer learning minimal 2 metode
+4. lakukan evaluasi dengan menghitung accuracy, precission, recal dan f1-score
+5. buat report perbandingan hasil dari dua metode 
